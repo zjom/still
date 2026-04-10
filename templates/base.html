@@ -8,7 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
 
     {% if page %}
-      {% set page_title = page.title ~ " | " ~ config.title %}
+      {% set current_title = page.title | default(value=config.title) %}
+      {% if current_title == config.title %}
+        {% set page_title = config.title %}
+      {% else %}
+        {% set page_title = current_title ~ " | " ~ config.title %}
+      {% endif %}
       {% if page.description %}
         {% set page_description = page.description | striptags | trim %}
       {% elif page.summary %}
@@ -20,7 +25,12 @@
       {% endif %}
       {% set page_url = page.permalink %}
     {% elif section %}
-      {% set page_title = section.title ~ " | " ~ config.title %}
+      {% set current_title = section.title | default(value=config.title) %}
+      {% if current_title == config.title %}
+        {% set page_title = config.title %}
+      {% else %}
+        {% set page_title = current_title ~ " | " ~ config.title %}
+      {% endif %}
       {% if section.description %}
         {% set page_description = section.description | striptags | trim %}
       {% elif config.description %}
