@@ -4,6 +4,8 @@
 
 [Live demo](https://zjom.github.io/still/) · [Theme repository](https://github.com/zjom/still)
 
+this is a fork of [wjianbo/zola-theme-still](https://github.com/wjianbo/zola-theme-still)
+
 ## Overview
 
 The theme keeps the structure intentionally spare:
