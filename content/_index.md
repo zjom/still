@@ -8,10 +8,10 @@ suggested = [
 ]
 
 nav = [
-    {name = "writings", href="/posts"},
-    {name = "contact", href="/contact"},
-    {name = "theme", href="https://github.com/zjom/still"},
-    {name = "zola", href="https://github.com/getzola/zola"},
+    { name = "writings", href="/posts" },
+    { name = "contact", href="/contact" },
+    { name = "theme", href="https://github.com/zjom/still" },
+    { name = "zola", href="https://github.com/getzola/zola" },
 ]
 +++
 
