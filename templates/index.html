@@ -9,21 +9,28 @@
 </article>
 {% endif %}
 
-{% if section.pages %}
-<section class="post-listing" aria-label="Posts">
-  {% for post in section.pages %}
-  <article class="post-card">
-    <h2 class="post-card-title">
-      <a href="{{ post.permalink }}">{{ post.title }}</a>
-    </h2>
-    {% if post.date %}
-    <div class="post-date">{{ post.date | date(format=date_format) }}</div>
-    {% endif %}
-    {% if post.summary %}
-    <p class="post-card-summary">{{ post.summary | striptags | safe }}</p>
-    {% endif %}
-  </article>
+{% if section.extra.suggested %}
+<hr>
+<h2>suggested</h2>
+<ul>
+  {% for rel in section.extra.suggested %}
+    {% set page = get_page(path=rel) %}
+    <li><a href="{{page.permalink}}">{{page.title}}</a></li>
   {% endfor %}
-</section>
+</ul>
 {% endif %}
+
+{% if section.extra.nav %}
+<hr>
+<footer>
+  <nav>
+    <ul>
+     {% for navitem in section.extra.nav -%}
+       <li><a href="{{ navitem.href }}">{{ navitem.name }}</a></li>
+     {%- endfor %}
+    </ul>
+  </nav>
+</footer>
+{% endif %}
+
 {% endblock content %}

@@ -169,26 +169,23 @@ pre {
   border: 1px solid var(--border);
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 5rem;
 }
 
 @media (min-width: 640px) {
-  .px-2 {
+  .container {
     padding-left: 5rem;
     padding-right: 5rem;
   }
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
 .post {
   max-width: 640px;
   margin: 0 auto;
-  padding: 4rem 1.2rem;
+  padding: 4rem 0rem;
 }
 
 .home-intro {
@@ -226,6 +223,7 @@ pre {
   margin-bottom: 1rem;
 }
 
+.post-updated,
 .post-date,
 .post-meta {
   font-size: 0.85rem;
@@ -281,7 +279,14 @@ hr {
 }
 
 code {
-  background: #f5f5f5;
   padding: 2px 6px;
   border-radius: 4px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
 }

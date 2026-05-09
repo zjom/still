@@ -42,7 +42,7 @@ cd myblog
 Add the theme under `themes/still`:
 
 ```bash
-git submodule add https://github.com/wjianbo/zola-theme-still themes/still
+git submodule add https://github.com/zjom/still themes/still
 ```
 
 Enable the theme in `config.toml`:
