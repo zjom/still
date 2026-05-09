@@ -2,7 +2,7 @@
 
 **still** is a minimal Zola theme for personal blogs, essays, notes, and other reading-first sites.
 
-[Live demo](https://wjianbo.github.io/zola-theme-still/) · [Theme repository](https://github.com/wjianbo/zola-theme-still)
+[Live demo](https://zjom.github.io/still/) · [Theme repository](https://github.com/zjom/still)
 
 ## Overview
 
@@ -26,7 +26,7 @@ The theme keeps the structure intentionally spare:
 
 A live demo is available here:
 
-- https://wjianbo.github.io/zola-theme-still/
+- https://zjom.github.io/still/
 
 This repository also serves as the demo site source, so the files in `content/`, `templates/`, and `sass/` double as working examples for the theme.
 
